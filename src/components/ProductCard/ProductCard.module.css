@@ -7,6 +7,11 @@
     font-family: sans-serif;
 }
 
+.card.cardPromotional {
+    background-color: aqua;
+    border-color: blueviolet;
+}
+
 .cardImg {
     max-width: 450px;
     padding-bottom: 12px;
@@ -39,6 +44,3 @@
     gap: 20px;
 }
 
-.cardAddToCardBtn {}
-
-.cardSmileBtn {}
