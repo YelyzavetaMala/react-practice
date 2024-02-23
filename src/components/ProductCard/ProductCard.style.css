@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px 20px;
+    font-family: sans-serif;
+}
+
+.cardImg {
+    max-width: 450px;
+    padding-bottom: 12px;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.cardTitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-top: 1px solid grey;
+    padding-top: 12px;
+    margin-top: 0;
+}
+
+.cardDescription {
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.cardPrice {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.cardBtnWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.cardAddToCardBtn {}
+
+.cardSmileBtn {}
