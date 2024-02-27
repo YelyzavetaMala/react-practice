@@ -1,5 +1,6 @@
 import ProductCard from './components/ProductCard/ProductCard';
 import './App.css'
+import MailBox from './components/mail/MailBox';
 
 const ProductData = [
   {
@@ -39,7 +40,18 @@ const ProductData = [
 
 
 function App() {
+
+  const onLogEmail = () => {
+    console.log("Email was sent");
+  }
+  const handleDelete = (mailId) => {
+        console.log("mailId: ", mailId);
+    };
+
   return <div>
+
+    <MailBox onLogEmail={onLogEmail} onDeleteEmail={handleDelete} />
+
     {ProductData.map(item => {
       const isPromotional = item.quantity <= 2;
       return (
