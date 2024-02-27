@@ -1,6 +1,7 @@
 import ProductCard from './components/ProductCard/ProductCard';
 import './App.css'
 import MailBox from './components/mail/MailBox';
+import { useState } from 'react';
 
 const ProductData = [
   {
@@ -40,16 +41,19 @@ const ProductData = [
 
 
 function App() {
+  const [counter, setCounter] = useState(0);
+  
 
   const onLogEmail = () => {
     console.log("Email was sent");
+    setCounter(counter + 1)
   }
   const handleDelete = (mailId) => {
         console.log("mailId: ", mailId);
     };
 
   return <div>
-
+    <h1>Email Counter: </h1>
     <MailBox onLogEmail={onLogEmail} onDeleteEmail={handleDelete} />
 
     {ProductData.map(item => {
